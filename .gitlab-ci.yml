@@ -1,0 +1,14 @@
+image: uppoints/docker-java-gcc
+
+build:
+  stage: build
+  script: make
+  artifacts:
+    paths:
+      - .
+
+#test:
+#  stage: test
+#  script: make test
+#  dependencies:
+#    - build
